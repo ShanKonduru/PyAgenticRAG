@@ -2,7 +2,7 @@
 import os
 from dotenv import load_dotenv
 
-from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
 from src.agent_state import AgentState
 from src.planning_agent import AggregatorAgent, LocalRAGAgent, PlanningAgent
 from src.retrieval_tool import RetrievalTool
@@ -12,7 +12,7 @@ load_dotenv()
 # openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # Initialize the LLM once
-LLM = Ollama(model="llama3")
+LLM = OllamaLLM(model="llama3")
 
 def main():
     # --- F. Build and Run the Agentic System ---

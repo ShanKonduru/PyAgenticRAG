@@ -1,7 +1,5 @@
-from langchain_community.llms import Ollama
 from langchain_core.prompts import ChatPromptTemplate
-from langgraph.graph import StateGraph, END
-from typing import TypedDict, Dict, Any
+from typing import Dict
 
 from src.agent_state import AgentState
 from src.retrieval_tool import RetrievalTool
