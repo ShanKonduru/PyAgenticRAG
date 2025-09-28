@@ -1,0 +1,32 @@
+Data Retention Policy
+
+1. Purpose
+This policy establishes guidelines for the retention and disposal of organizational data to ensure compliance with legal requirements and operational efficiency.
+
+2. Scope
+This policy applies to all forms of data including:
+- Electronic documents and files
+- Physical documents and records
+- Database records
+- Email communications
+- Backup systems
+
+3. Retention Periods
+- Financial records: 7 years
+- Employee records: 3 years after termination
+- Customer data: 5 years after last interaction
+- Email communications: 2 years
+- System logs: 1 year
+
+4. Data Classification
+- Confidential: Requires special handling and extended retention
+- Internal: Standard business data with normal retention
+- Public: No special retention requirements
+
+5. Disposal Procedures
+All data must be securely disposed of according to its classification level. Confidential data requires certified destruction.
+
+6. Compliance
+This policy ensures compliance with GDPR, CCPA, and other applicable regulations.
+
+For questions about this policy, contact the Data Protection Officer.

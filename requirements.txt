@@ -1,11 +1,40 @@
-# List your project dependencies here
-dotenv
+# Core dependencies
+python-dotenv
 pytest
 pytest-html
 pytest-cov
+pyyaml
 
+# LangChain ecosystem
 langchain-community 
 langchain-core 
 langgraph 
 langchain-ollama
 ollama
+
+# Vector databases
+chromadb
+sentence-transformers
+numpy
+
+# Optional vector databases (install as needed)
+# qdrant-client
+# pinecone-client
+
+# Web framework for API
+fastapi
+uvicorn
+pydantic
+
+# Document processing
+pypdf2
+python-docx
+beautifulsoup4
+requests
+
+# Data connectors
+sqlalchemy
+psycopg2-binary
+
+# Monitoring and observability
+prometheus-client
