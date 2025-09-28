@@ -1,0 +1,10 @@
+# List your project dependencies here
+dotenv
+pytest
+pytest-html
+pytest-cov
+
+langchain-community 
+langchain-core 
+langgraph 
+ollama
