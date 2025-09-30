@@ -24,70 +24,70 @@ PyAgenticRAG is a production-ready, enterprise-grade multi-agent system that orc
 
 ```mermaid
 graph TB
-    User[👤 User Query] --> Interface{Interface Type}
+    User[User Query] --> Interface{Interface Type}
     
-    Interface -->|CLI Mode| CLI[🖥️ Interactive CLI]
-    Interface -->|API Mode| API[🌐 FastAPI Server]
-    Interface -->|Single Query| Direct[⚡ Direct Processing]
+    Interface -->|CLI Mode| CLI[Interactive CLI]
+    Interface -->|API Mode| API[FastAPI Server]
+    Interface -->|Single Query| Direct[Direct Processing]
     
-    CLI --> System[🎯 AgenticRAG System]
+    CLI --> System[AgenticRAG System]
     API --> System
     Direct --> System
     
-    System --> Config[⚙️ Configuration Manager]
-    Config --> LLM[🤖 Language Model<br/>Ollama/OpenAI]
-    Config --> VectorDB[🔍 Vector Database<br/>ChromaDB/Qdrant]
+    System --> Config[Configuration Manager]
+    Config --> LLM[Language Model<br/>Ollama/OpenAI]
+    Config --> VectorDB[Vector Database<br/>ChromaDB/Qdrant]
     
-    System --> StateManager[📊 Enhanced State Manager]
-    StateManager --> Memory[🧠 Agent Memory]
-    StateManager --> ErrorHandler[❌ Error Handler]
-    StateManager --> Metrics[📈 Performance Metrics]
+    System --> StateManager[Enhanced State Manager]
+    StateManager --> Memory[Agent Memory]
+    StateManager --> ErrorHandler[Error Handler]
+    StateManager --> Metrics[Performance Metrics]
     
-    System --> DataManager[📁 Data Source Manager]
-    DataManager --> FileSource[📄 File Sources<br/>PDF, DOCX, TXT, JSON]
-    DataManager --> WebSource[🌐 Web Sources<br/>URL Scraping]
-    DataManager --> DBSource[🗄️ Database Sources<br/>SQL Queries]
-    DataManager --> APISource[🔗 API Sources<br/>REST Endpoints]
+    System --> DataManager[Data Source Manager]
+    DataManager --> FileSource[File Sources<br/>PDF, DOCX, TXT, JSON]
+    DataManager --> WebSource[Web Sources<br/>URL Scraping]
+    DataManager --> DBSource[Database Sources<br/>SQL Queries]
+    DataManager --> APISource[API Sources<br/>REST Endpoints]
     
-    FileSource --> Processing[⚡ Document Processing]
+    FileSource --> Processing[Document Processing]
     WebSource --> Processing
     DBSource --> Processing
     APISource --> Processing
     
-    Processing --> Chunking[✂️ Text Chunking]
-    Processing --> Embedding[🔢 Embedding Generation]
+    Processing --> Chunking[Text Chunking]
+    Processing --> Embedding[Embedding Generation]
     Chunking --> VectorDB
     Embedding --> VectorDB
     
-    System --> AgentOrchestrator[🎭 Agent Orchestrator]
+    System --> AgentOrchestrator[Agent Orchestrator]
     
-    AgentOrchestrator --> PlanningAgent[🎯 Planning Agent]
-    PlanningAgent --> ReactReasoning[🤔 ReAct Reasoning]
-    ReactReasoning --> ExecutionPlan[📋 Execution Plan]
+    AgentOrchestrator --> PlanningAgent[Planning Agent]
+    PlanningAgent --> ReactReasoning[ReAct Reasoning]
+    ReactReasoning --> ExecutionPlan[Execution Plan]
     
-    ExecutionPlan --> RetrievalAgents[🔍 Retrieval Agents]
-    RetrievalAgents --> LocalRAG[📚 Local RAG Agent]
-    RetrievalAgents --> WebSearch[🌐 Web Search Agent]
-    RetrievalAgents --> DatabaseAgent[🗄️ Database Agent]
+    ExecutionPlan --> RetrievalAgents[Retrieval Agents]
+    RetrievalAgents --> LocalRAG[Local RAG Agent]
+    RetrievalAgents --> WebSearch[Web Search Agent]
+    RetrievalAgents --> DatabaseAgent[Database Agent]
     
-    LocalRAG --> VectorSearch[🔎 Vector Search]
+    LocalRAG --> VectorSearch[Vector Search]
     VectorSearch --> VectorDB
-    VectorDB --> SearchResults[📋 Search Results]
+    VectorDB --> SearchResults[Search Results]
     
-    SearchResults --> AggregatorAgent[🎯 Aggregator Agent]
-    AggregatorAgent --> Synthesis[⚗️ Response Synthesis]
-    Synthesis --> QualityAssessment[✅ Quality Assessment]
-    QualityAssessment --> FinalResponse[📝 Final Response]
+    SearchResults --> AggregatorAgent[Aggregator Agent]
+    AggregatorAgent --> Synthesis[Response Synthesis]
+    Synthesis --> QualityAssessment[Quality Assessment]
+    QualityAssessment --> FinalResponse[Final Response]
     
     FinalResponse --> ResponseDelivery{Response Delivery}
-    ResponseDelivery -->|CLI| CLIOutput[🖥️ CLI Output]
-    ResponseDelivery -->|API| JSONResponse[📄 JSON Response]
-    ResponseDelivery -->|Direct| PythonObject[🐍 Python Object]
+    ResponseDelivery -->|CLI| CLIOutput[CLI Output]
+    ResponseDelivery -->|API| JSONResponse[JSON Response]
+    ResponseDelivery -->|Direct| PythonObject[Python Object]
     
-    System --> Monitoring[📊 System Monitoring]
-    Monitoring --> Logging[📝 Comprehensive Logging]
-    Monitoring --> HealthChecks[💚 Health Checks]
-    Monitoring --> Analytics[📈 Performance Analytics]
+    System --> Monitoring[System Monitoring]
+    Monitoring --> Logging[Comprehensive Logging]
+    Monitoring --> HealthChecks[Health Checks]
+    Monitoring --> Analytics[Performance Analytics]
     
     classDef userNode fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     classDef systemNode fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
